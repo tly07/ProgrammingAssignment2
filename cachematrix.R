@@ -29,9 +29,9 @@ cacheSolve <- function(x, ...) {
         message ("getting cached data")
         return (inv)
         }
-       ## else, compute the inverse of the input and store it in makeCacheMatrix
-       data <- x$get()
-       inv <- solve(data, ...)
-       x$setinverse(inv)
-       inv
+        ## else, compute the inverse of the input and store it in makeCacheMatrix
+        data <- x$get()
+        inv <- solve(data, ...)
+        x$setinverse(inv)
+        inv
 }
